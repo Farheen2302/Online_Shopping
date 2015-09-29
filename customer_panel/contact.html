@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-base.css" />
+<link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-topbar.css" />
+<link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-sidebar.css" />
+
+<script type="text/javascript" src="ddlevelsfiles/ddlevelsmenu.js">
+
+/***********************************************
+* All Levels Navigational Menu- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+
+
+<meta charset="UTF-8">
+<title>Example of Twitter Bootstrap 3 Dropdowns within a Navbar</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+<style>
+
+topper {
+	height:30px;
+	line-height:5px;
+	background-color:solid gray;
+	color:red;
+	text-align:center;
+	padding:5px;
+	}
+
+header {
+	
+	height:"200px";
+    background-color:lightblue;
+    color:white;
+    
+    padding:10px;	 
+}
+nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    color:black;
+    height:180px;
+    width:200px;
+    float:left;
+    padding:5px;	      
+}
+
+footer {
+	height:"200px";
+    background-color:lightblue;
+    color:black;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+
+
+form1 {
+                width:10px;
+                margin:10px auto;
+                }
+
+.search {
+                padding:8px 15px;
+                background:rgba(50, 50, 50, 0.2);
+                border:2px solid #D3D3D3;
+}
+.button {	
+				width:5px;
+                position:relative;
+                padding:3px 10px;
+                left:0px;
+                border:2px solid #207cca;
+                background-color:red;
+                color:lightblue;
+}
+.button:hover  {
+                background-color:#fafafa;
+                color:#4169E1;
+}
+.b9 {
+border-style:inset;
+}
+section {
+	padding:10px;	
+	color:solid gray;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	height:1000px;
+	width:900px;
+	}
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+<br>
+<br>
+	
+<h1>LAPTON</h1>
+<form1>
+                                <input type="text" placeholder="Search..." required/>
+                                <input type="button" value="Search"/>
+</form1>
+<br>
+<br>
+<br>
+</header>
+
+
+<!--HTML for the Drop Down Menus associated with Top Menu Bar-->
+<!--They should be inserted OUTSIDE any element other than the BODY tag itself-->
+<!--A good location would be the end of the page (right above "</BODY>")-->
+
+<!--Top Drop Down Menu 1 HTML-->
+
+
+
+
+<topper>
+<pre>
+<p>  
+								  
+<a href="home_main">HOME</a>     <a href="about" >ABOUT US</a>     <a href='products' onclick=\"location.href=this.href+'?key2=offers';return false;\">SPECIAL</a>     <a href="contact.html" >CONTACT US</a> 
+
+</P>	
+</pre>
+</topper>
+
+
+
+<br>
+<br>
+
+
+<!--
+<nav>
+<br>
+
+
+<div id="ddtopmenubar" class="slidetabsmenu">
+<ul>
+<li><a href="http://www.dynamicdrive.com"><span>HOME</span></a></li>
+<li><a href="http://www.dynamicdrive.com/new.htm" rel="ddsubmenu1"><span>CONTACT US</span></a></li>
+<li><a href="http://www.dynamicdrive.com/style/" rel="ddsubmenu2"><span>SPECIAL</span></a></li>
+<li><a href="http://tools.dynamicdrive.com/" rel="ddsubmenu3"><span>ACCOUNT</span></a></li>
+</ul>
+</div>
+
+<script type="text/javascript">
+ddlevelsmenu.setup("ddtopmenubar", "topbar") //ddlevelsmenu.setup("mainmenuid", "topbar")
+</script>
+
+
+
+<ul id="ddsubmenu1" class="ddsubmenustyle">
+<li><a href="#">CUSTOMER CARE</a>
+	<ul>
+		<li><a href="#">contact</a>
+			<ul>
+				<li><a href="#">8826345209</a></li>
+				<li><a href="#">8826745209</a></li>
+				<li><a href="#">8824545209</a></li>
+			</ul>
+		</li>
+	</ul>
+</li>
+	
+<li><a href="#">MAIL US</a>
+	<ul>
+				<li><a href="#">farheefnilofer@gmail.com</a></li>
+				<li><a href="#">sarib.shahbaz@mail.com</a></li>
+				<li><a href="#">mario@gmail.com</a></li>
+	</ul>
+</li>
+	
+<li><a href="#">COMPANY </a>
+	  <ul>
+		  <li><a href="#">ADDRESS</a>
+				<ul>
+					 <li><a href="#">Jamia Millia Islamia,New Delhi</a></li>
+			  	     <li><a href="#">Bi-Amma Girls Hostel,New Delhi</a></li>
+				</ul>
+		 </li>
+      </ul>
+ </li>
+	
+ 
+  	
+     <li><a href="#">Managed By</a>
+         	<ul>
+		  		<li><a href="#">FARHEEN NILOFER</a></li>
+		  		<li><a href="#">MARIA KHAN</a></li>
+		  		<li><a href="#">BUSHRA KHAN</a></li>
+        	</ul>
+         </li>
+   </ul>
+     
+  	
+  
+
+
+<!--Top Drop Down Menu 2 HTML-->
+<!--
+<ul id="ddsubmenu2" class="ddsubmenustyle">
+<li><a href="#">DELL</a></li>
+<li><a href="#">ASUS</a></li>
+<li><a href="#">LENOVO</a></li>
+<li><a href="#">HP</a></li>
+<li><a href="#">ACER</a></li>
+ <li><a href="#">TOSHIBA</a></li>
+<li><a href="#">SEVEN RAYS</a></li>
+</ul>
+
+<!--Top Drop Down Menu 3 HTML-->
+<!--
+<ul id="ddsubmenu3" class="ddsubmenustyle">
+<li><a href="user.html">Your Account</a></li><!set a link to user account>
+<li><a href="http://tools.dynamicdrive.com/favicon/">Your Oders</a></li>
+<li><a href="http://www.dynamicdrive.com/emailriddler/">Your Wish List</a></li>
+<li><a href="http://tools.dynamicdrive.com/password/">Your Recommendations</a></li>
+<li><a href="http://tools.dynamicdrive.com/userban/">Manage Your Kindlde</a></li>
+</ul>
+
+
+
+</nav>-->
+<pre>                              <section class="b9">
+<div>
+
+<h1 style="color:lightgreen">CONTACT US</h1>
+
+
+<h>CENTRES:</h>
+<p>
+<br>
+1.SOUTH EX part I
+Ist Floor Lodhi Tower,
+New Delhi-10025
+Contact Number:6748294657,89834348957,9853223459
+</p>
+<p>
+<br>
+2.NSIC Exhibition Complex,
+Outer Ring Road,Govindpuri Metro station,
+Okhla Phase II,New Delhi-110025.
+Contact Number:6748294657,89834348957,9853223459
+</p>
+<p>
+<br>
+2.Compact Complex,
+Inner Ring Road,Lajpat Metro station,
+Lajpat Nagar,New Delhi-110025.
+Contact Number:6748294657,89834348957,9853223459
+</p>
+<h>Custaomer Care Numbers:</h>
+<p>
+1.011-2344534
+2.011-4354656
+3.011-4546577
+</p>
+<h>MAIL US:</h>
+<p>
+bushra@yahoo.com
+farheenfnilofer@mail.com
+mario.43@hotmail.com
+</p>
+
+
+
+</div>
+</section>
+</pre>
+<br>
+
+
+<footer>
+Copyright © farheenfnilofer@gmail.com <br>
+mario
+<br>
+bushra
+<br>
+<br>
+</footer>
+
+</body>
+</html>
+
+
+
+

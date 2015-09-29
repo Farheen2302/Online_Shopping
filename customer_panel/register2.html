@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-base.css" />
+<link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-topbar.css" />
+<link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-sidebar.css" />
+
+<script type="text/javascript" src="ddlevelsfiles/ddlevelsmenu.js">
+
+/***********************************************
+* All Levels Navigational Menu- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+
+
+<meta charset="UTF-8">
+<title>Example of Twitter Bootstrap 3 Dropdowns within a Navbar</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+<style>
+
+form    {
+
+background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+background-color:#74ad5a;
+margin:auto;
+position:relative;
+width:800px;
+height:10*50px;
+font-family: Big Caslon;
+font-size: 20px;
+font-style: italic;
+line-height: 15px;
+font-weight: bold;
+color: black;
+text-decoration: none;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding:10px;
+border: 1px solid silver;
+border: inset 5px solid #333;
+-webkit-box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
+}
+
+input   {
+border-radius: 5px;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  width:300px;
+}
+
+textarea#feedback {
+width:600px;
+height:150px;
+}
+textarea.ADDRESS {
+display:block;
+width:500px;
+}
+
+
+
+
+textarea:focus, input:focus {
+border: 1px solid #09C;
+}
+
+
+
+
+
+
+
+
+
+
+topper {
+	height:30px;
+	line-height:5px;
+	background-color:solid gray;
+	color:red;
+	text-align:center;
+	padding:5px;
+	}
+
+
+header {
+	
+	height:"200px";
+    background-color:lightblue;
+    color:white;
+    
+    padding:10px;	 
+}
+nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    color:black;
+    height:140px;
+    width:200px;
+    float:left;
+    padding:5px;	      
+}
+section {
+    width:1000px;
+    float:right;
+    color:#74ad5a;
+    padding:10px;	 	 
+}
+footer {
+	height:"200px";
+    background-color:lightblue;
+    color:black;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+
+
+
+
+
+
+
+
+
+
+.myButton {
+	-moz-box-shadow:inset -12px -10px 23px 22px #9acc85;
+	-webkit-box-shadow:inset -12px -10px 23px 22px #9acc85;
+	box-shadow:inset -12px -10px 23px 22px #9acc85;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #74ad5a), color-stop(1, #68a54b));
+	background:-moz-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:-webkit-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:-o-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:-ms-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#74ad5a', endColorstr='#68a54b',GradientType=0);
+	background-color:#74ad5a;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #3b6e22;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Courier New;
+	font-size:17px;
+	font-weight:bold;
+	padding:8px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #92b879;
+	width:100px;
+	position:relative;
+	padding:6px 15px;
+	left:-8px;
+	border:2px solid white;
+	background-color:red;
+	
+	}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #68a54b), color-stop(1, #74ad5a));
+	background:-moz-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:-webkit-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:-o-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:-ms-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#68a54b', endColorstr='#74ad5a',GradientType=0);
+	background-color:#68a54b;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+
+
+form1 {
+                width:10px;
+                margin:10px auto;
+
+.search {
+                padding:8px 15px;
+                background:rgba(50, 50, 50, 0.2);
+                border:2px solid #D3D3D3;
+}
+.button {	
+				width:5px;
+                position:relative;
+                padding:3px 10px;
+                left:0px;
+                border:2px solid #207cca;
+                background-color:red;
+                color:lightblue;
+}
+.button:hover  {
+                background-color:#fafafa;
+                color:#4169E1;
+}
+}
+
+
+
+
+
+
+	
+	
+</style>
+</head>
+
+<body>
+<header>
+<br>
+<br>
+	
+<h1>LAPTON</h1>
+<form1>
+<input type="text" placeholder="Search..." required/><input type="button" value="Search"/>
+</form1>
+<br>
+<br>
+<br>
+</header>
+
+
+<!--HTML for the Drop Down Menus associated with Top Menu Bar-->
+<!--They should be inserted OUTSIDE any element other than the BODY tag itself-->
+<!--A good location would be the end of the page (right above "</BODY>")-->
+
+<!--Top Drop Down Menu 1 HTML-->
+
+
+
+
+<topper>
+<pre>
+<p>  
+								  
+<a href="log" >HOME</a>     <a href="about" >ABOUT US</a>     <a href="http://www.w3schools.com/" target="_blank">SPECIAL</a>     <a href="http://www.w3schools.com/" target="_blank">CONTACT US</a>    <a href="log" >LOGIN</a>      
+
+</P>	
+</pre>
+</topper>
+
+
+
+<br>
+<br>
+
+<h3><font color="red"><center>Password not Confirmed!...Enter again</center></font></h3>
+
+
+<form class="col-2-3" action="reg" method="post">
+<br>
+<br>
+
+  	<legend>REGISTER ACCOUNT</legend>
+  <br>
+  <label>
+      User ID:
+      <input type="email" name="email" placeholder="Email address" required>
+    </label><br><br><br><br>
+  <label>
+      User Name:
+      <input type="text" name="name" placeholder="Full name" required>
+    </label><br><br><br><br>
+   <label>
+      Date Of Birth:
+    <input type="date" name="dob">
+    </label><br><br><br><br>
+   <lebel>
+   	Gender:<br><br><br>
+   		<input type="radio" name="gender" value="Male" checked> Male<br>
+		<input type="radio" name="gender" value="Female"> Female
+	</lebel><br><br><br><br>
+	<label>
+      Phone NO.:
+      <input type="number" name="PHONE_NO" placeholder="contact no." required>
+    </label><br><br><br><br>
+	
+     <label>
+      Address:
+      <textarea name="address" rows="3" cols="25"></textarea>
+    </label><br><br><br><br>
+	
+	
+	
+	
+	<lebel>
+City:<br><br><input list="cities" name="city">
+<datalist id="cities">
+    <option value="Kanpur">
+  <option value="Mumbai">
+  <option value="Chennai">
+  <option value="Kilkata">
+  <option value="New Delhi">
+  <option value="Banglore">
+</datalist><br><br>
+</lebel>
+
+
+
+
+	<lebel>
+State:<br><br><input list="states" name="state">
+<datalist id="states"> 
+   <option value="UP">
+  <option value="MP">
+  <option value="Maharashtra">
+  <option value="Tamil Nadu">
+  <option value="AP">
+  <option value="Delhi">
+</datalist><br><br>
+</lebel>
+
+
+
+
+<lebel>
+Country:<br><br><input list="countries" name="country">
+<datalist id="countries">
+  <option value="India">
+  <option value="China">
+  <option value="Japan">
+  <option value="Korea">
+  <option value="Bangladesh">
+  <option value="Myanmar">
+  </lebel>
+	
+	
+	
+	
+<!--	<lebel>
+		Country:
+    <select name="country">
+  		<option value="India" >India</option>
+  		<option value="China">China</option>
+  		<option value="Japan">Japan</option>
+  		<option value="Korea" >Korea</option>
+  		<option value="Bangladesh">Bangladesh</option>
+  		<option value="Myanmar">Myanmar</option>
+	</select>
+	</lebel><br><br><br><br>
+	<lebel>
+		State:
+    <select name="state">
+  		<option value="UP" >UP</option>
+  		<option value="MP">MP</option>
+  		<option value="Maharastra">Maharastra</option>
+  		<option value="Tamil Nadu" >Tamil Nadu</option>
+  		<option value="AP">AP</option>
+  		<option value="Delhi">Delhi</option>
+	</select>
+	</lebel><br><br><br><br>
+	<lebel>
+		City:
+    <select name="city">
+  		<option value="Kanpur" >Kanpur</option>
+  		<option value="New Delhi">New Delhi</option>
+  		<option value="Mumbai">Mumbai</option>
+  		<option value="Kolkata" >Kolkata</option>
+  		<option value="Chennai">Chennai</option>
+  		<option value="Banglore">Banglore</option>
+	</select>
+	</lebel>--><br><br><br><br>
+	
+	<level>
+          <span>Enter Password:<br><br></span> <input id="password" type="password" name="pwd"/><br><br>
+     </level>
+     <level>
+       <span>Confirm Password:<br><br></span> <input id="password" type="password" name="pwd2"/><br><br>
+     </level>
+	<button name="submit"><strong>       Save      </strong>
+</button>
+
+<br>
+<br>
+<br>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+</body>
+
+
+<footer>
+Copyright © farheenfnilofer@gmail.com <br>
+mario
+<br>
+bushra
+<br>
+<br>
+</footer>
+
+</body>
+</html>
+
+
+
